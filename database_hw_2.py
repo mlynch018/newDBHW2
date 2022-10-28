@@ -21,7 +21,7 @@ class FileSplitter(object):
 		counter = 1
 		while True:
 			try:
-				file_name = "{}/{}_{}_row_{}.csv".format(directory, self.file_settings.file_name.split(".")[0], counter, self.file_settings.row_size)
+				file_name = "{}/{}{}.csv".format(directory, self.file_settings.file_name.split(".")[0], counter, self.file_settings.row_size)
 				df = next(self.df).to_csv(file_name)
 				counter = counter + 1
 			except StopIteration:
