@@ -18,7 +18,7 @@ class FileSplitter(object):
 		try:os.makedirs(directory)
 		except Exception as e:pass
 
-		counter = 0
+		counter = 1
 		while True:
 			try:
 				file_name = "{}/{}_{}_row_{}.csv".format(directory, self.file_settings.file_name.split(".")[0], counter, self.file_settings.row_size)
