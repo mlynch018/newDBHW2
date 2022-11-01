@@ -1,3 +1,6 @@
+# Programmer: Midori Lynch 
+# CS 5300 HW 2 Splitting the data file 
+
 import os
 import pandas as pd
 import numpy as np
